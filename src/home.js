@@ -1,0 +1,61 @@
+import Mouse from './mouse.jpg';
+import './style.css';
+
+
+export default function Home() {
+  let contentDiv = document.createElement('div');
+  contentDiv.setAttribute('id', 'content');
+  let header = document.createElement('header');
+  let restaurantName = document.createElement('h1');
+  restaurantName.innerText = 'Gusteau';
+  restaurantName.classList.add('name');
+  let navbar = document.createElement('nav');
+  let homeLi = document.createElement('li');
+  let homeButton = document.createElement('button');
+  homeButton.classList.add('nav-button');
+  homeButton.innerText = 'Home';
+  homeLi.appendChild(homeButton);
+  let menuLi = document.createElement('li');
+  let menuButton = document.createElement('button');
+  menuButton.classList.add('nav-button');
+  menuButton.innerText = 'Menu';
+  menuLi.appendChild(menuButton);
+  let contactLi = document.createElement('li');
+  let contactButton = document.createElement('button');
+  contactButton.classList.add('nav-button');
+  contactButton.innerText = 'Contact';
+  contactLi.appendChild(contactButton);
+  let aboutUsLi = document.createElement('li');
+  let aboutUsButton = document.createElement('button');
+  aboutUsButton.classList.add('nav-button');
+  aboutUsButton.innerText = 'About Us';
+  aboutUsLi.appendChild(aboutUsButton);
+  let ul = document.createElement('ul');
+  ul.appendChild(homeLi);
+  ul.appendChild(menuLi);
+  ul.appendChild(contactLi);
+  ul.appendChild(aboutUsLi);
+  navbar.appendChild(ul);
+  header.appendChild(restaurantName);
+  header.appendChild(navbar);
+  contentDiv.appendChild(header);
+  let breakDiv = document.createElement('div');
+  breakDiv.classList.add('break');
+  contentDiv.appendChild(breakDiv);
+  
+  let main = document.createElement('main');
+  let imperativeSentence = document.createElement('h2');
+  imperativeSentence.innerText = 'Come and taste the dishes that appear on the movie!';
+  let figure = document.createElement('figure');
+  let img = document.createElement('img');
+  img.setAttribute('src', Mouse);
+  img.setAttribute('alt', 'Our brilliant chef working');
+  let figcaption = document.createElement('figcaption');
+  figcaption.innerText = 'Our brilliant chef working!';
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+  main.appendChild(imperativeSentence);
+  main.appendChild(figure);
+  contentDiv.appendChild(main);
+  document.body.appendChild(contentDiv);
+}

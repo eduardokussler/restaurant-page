@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 html {
   --site_background: #333333;
   --text_color: #ebebeb;
@@ -6,7 +9,12 @@ html {
   background-color: var(--site_background);
   color: var(--text_color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0;
+  overflow: visible;
+  height: 100vh;
+
 }
 
 #name {
@@ -23,6 +31,19 @@ nav ul li {
   display: inline;
 }
 
+figure img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+.break {
+  height: 0;
+  flex-basis: 100%;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+}
 .nav-button {
   cursor: pointer;
   outline: none;
