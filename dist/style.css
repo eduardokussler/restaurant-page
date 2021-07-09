@@ -1,0 +1,37 @@
+html {
+  --site_background: #333333;
+  --text_color: #ebebeb;
+}
+#content {
+  background-color: var(--site_background);
+  color: var(--text_color);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#name {
+  font-family: 'Courgette', sans-serif;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.nav-button {
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  border: 1px var(--text_color) solid;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--site_background);
+  color: var(--text_color);
+  padding: 5px 20px 5px 20px;
+}
