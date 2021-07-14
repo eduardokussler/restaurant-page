@@ -43,6 +43,8 @@ figure img {
 
 main {
   font-family: 'Poppins', sans-serif;
+  width: 50%;
+  margin-left: 18%;
 }
 .nav-button {
   cursor: pointer;

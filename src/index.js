@@ -1,5 +1,6 @@
-import Home from './home';
+import FirstLoad, { Home } from './home';
 import head from './head';
 
 head();
-Home();
+let content = FirstLoad();
+document.body.appendChild(content);
