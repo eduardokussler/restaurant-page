@@ -1,0 +1,3 @@
+Project based on the exercise of the Odin Project, [restaurant page](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page).
+
+I'm more interested in the basics concepts of DOM manipulation and webpack, not in the design of the website. Other than that, the assigment asks to use the index file to handle the tab-swithing, but I chose to work with that in the event listeners.
